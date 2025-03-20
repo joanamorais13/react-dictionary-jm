@@ -6,18 +6,18 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      {/* <div className="container"> */}
       <header className="App-header">
         <img src={logo} className="App-logo img-fluid" alt="logo"  />
       </header>
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="sun"/>
       </main>
       <footer className='App-footer'>
         Coded by Joana Morais
       </footer>
     </div>
-    </div>
+    // </div>
   );
 }
 

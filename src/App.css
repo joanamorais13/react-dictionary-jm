@@ -1,3 +1,20 @@
+:root{
+--first-color: #faf6e9;
+--second-color: #ece8d9;
+--third-color: #fffdf6;
+--fourth-color: #494949;
+  }
+
+body{
+  background-color: var(--third-color);
+}
+
+a {
+  color: var(--fourth-color);
+}
+
+
+
 .App-header {
   margin: 30px 0;
 }
