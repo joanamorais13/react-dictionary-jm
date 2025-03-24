@@ -13,16 +13,22 @@ a {
   color: var(--fourth-color);
 }
 
-
+.App{
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
 
 .App-header {
   margin: 30px 0;
 }
 
 .App-logo {
-  max-width: 200px;
+  max-width: 400px;
   display: block;
   margin: 0 auto;
+  mix-blend-mode: multiply;
+
 }
 
 .App-footer {

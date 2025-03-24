@@ -1,3 +1,7 @@
+.Meaning {
+    width: 100%;
+}
+
 .Meaning h3{
     font-size: 25px;
     line-height: 1.5;
@@ -6,9 +10,26 @@
     text-transform: capitalize;
 }
 
+.Meaning .container{
+    margin: 0;
+    padding: 20px;
+    border: 2px solid var(--second-color);
+    border-radius: 6px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    
+}
+.Meaning .definition {
+    margin: 10px 0;
+
+}
 .Meaning .example{
-    font-size: 14px;
+    font-size: 15px;
     opacity: 0.7;
     font-style: italic;
     margin: 10px 0;
+   
 }
+
