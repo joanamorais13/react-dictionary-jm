@@ -9,12 +9,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 function App() {
   return (
     <div className="App">
-      {/* <div className="container"> */}
       <header className="App-header">
         <img src={logo} className="App-logo img-fluid" alt="logo"  />
       </header>
       <main>
-        <Dictionary defaultKeyword="sun"/>
+        <Dictionary defaultKeyword="ladybug"/>
       </main>
       <footer className='App-footer'>
          This project is open sourced on {' '}
@@ -26,7 +25,6 @@ function App() {
       </footer>
       
     </div>
-    // </div>
   );
 }
 
