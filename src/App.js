@@ -2,6 +2,9 @@ import logo from './logo.png';
 import './App.css';
 import Dictionary from "./Dictionary";
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 function App() {
   return (
@@ -14,8 +17,14 @@ function App() {
         <Dictionary defaultKeyword="sun"/>
       </main>
       <footer className='App-footer'>
-        Coded by Joana Morais
+         This project is open sourced on {' '}
+      <strong>
+        <a href="https://github.com/joanamorais13/react-dictionary-app"
+          >GitHub <FontAwesomeIcon icon={faGithub}/> </a>
+          
+          </strong>
       </footer>
+      
     </div>
     // </div>
   );
