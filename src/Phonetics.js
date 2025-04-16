@@ -8,9 +8,19 @@ export default function Phonetics(props) {
         audio.play();
     }
 
+    // return (
+    //     <div className="Phonetics">
+    //         <a href={props.phonetic.audio} onClick={playAudio}>Listen</a>
+    //         <span className="text">{props.phonetic.text}</span>
+    //     </div>
+    // );
     return (
         <div className="Phonetics">
-            <a href={props.phonetic.audio} onClick={playAudio}>Listen</a>
+            {props.phonetic.audio && (
+                <a href={props.phonetic.audio} onClick={playAudio}>
+                    Listen
+                </a>
+            )}
             <span className="text">{props.phonetic.text}</span>
         </div>
     );
