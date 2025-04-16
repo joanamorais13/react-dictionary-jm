@@ -19,9 +19,14 @@ export default function Dictionary(props){
         setPhotos(response.data.photos);
     }
 
+    function handleRejection(error) {
+        console.log(error);
+        alert("NO RESULTS");
+    }
+
     function search(){
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
-        axios.get(apiUrl).then(handleResponse);
+        axios.get(apiUrl).then(handleResponse).catch(handleRejection);
 
         let pexelsApiKey ="TPT5bqA5Psj9YZx14QMNobixYBQUvbu9DEIt7u2vDmvo2FdmWC9AfZrl";
         let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;

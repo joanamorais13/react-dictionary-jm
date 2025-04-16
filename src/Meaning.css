@@ -33,3 +33,37 @@
    
 }
 
+
+@media (min-width: 320px) and (max-width: 480px) {
+        .Meaning h3 {
+            font-size: 22px;
+            
+        }
+    
+        .Meaning .container {
+            margin: 0;
+            padding: 20px;
+            border: 2px solid var(--second-color);
+            border-radius: 6px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: none;
+            box-sizing: border-box;
+    
+        }
+    
+        .Meaning .definition {
+            margin: 10px 0;
+            font-size: 14px;
+    
+        }
+    
+        .Meaning .example {
+            font-size: 15px;
+            opacity: 0.7;
+            font-style: italic;
+            margin: 10px 0;
+            font-size: 14px;
+    
+        }
+}

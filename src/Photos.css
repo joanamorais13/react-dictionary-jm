@@ -10,3 +10,15 @@
     opacity: 0.7;
     
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .Photos img {
+            margin-bottom: 8px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+.Photos img {
+    margin-bottom: 8px;
+}
+}

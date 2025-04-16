@@ -29,3 +29,29 @@
     font-size: 35px;
 
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .dictionary section {
+        padding: 20px;
+        margin: 20px 20px;
+    }
+
+    .dictionary h1 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        }
+
+        .dictionary h2 {
+            font-size: 20px;
+    
+        }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .dictionary section {
+            padding: 30px;
+            margin: 30px 30px;
+        }
+}
+

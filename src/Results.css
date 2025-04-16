@@ -5,3 +5,17 @@
     color: var(--fourth-color);
 
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .Results h2 {
+        font-size: 25px;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+    .Results h2 {
+        font-size: 30px;
+        line-height: 1;
+    }}

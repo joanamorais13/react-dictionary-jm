@@ -19,9 +19,8 @@ function App() {
          This project is open sourced on {' '}
       <strong>
         <a href="https://github.com/joanamorais13/react-dictionary-app"
-          >GitHub <FontAwesomeIcon icon={faGithub}/> </a>
-          
-          </strong>
+          >GitHub</a>
+        </strong>  <FontAwesomeIcon icon={faGithub}/>
       </footer>
       
     </div>

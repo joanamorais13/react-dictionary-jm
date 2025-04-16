@@ -36,3 +36,36 @@ a {
   margin: 30px 0;
   font-size: 15px;
 }
+
+@media (min-width: 0px) and (max-width: 480px) 
+{ .App-header {
+    margin: 0;
+  }
+
+    .App-logo {
+      max-width: 150px;
+  
+    }
+
+  .App-footer {
+    
+     font-size: 10px;
+}
+}
+@media (min-width: 481px) and (max-width: 768px) 
+{
+    .App-header {
+      margin: 0;
+    }
+
+    .App-logo {
+      max-width: 200px;
+
+    }
+
+        .App-footer {
+    
+          font-size: 12px;
+        }
+  }
+
