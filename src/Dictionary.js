@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results"
@@ -47,10 +47,12 @@ export default function Dictionary(props){
         setKeyword(event.target.value);
     }
 
-    function load(){
-        setLoaded(true);
-        search();
-    }
+    useEffect(() => {
+        if (!loaded) {
+            setLoaded(true);
+            search();
+        }
+    }, [loaded]);
 
     if (loaded){
     return (<div className="dictionary">
@@ -66,7 +68,6 @@ export default function Dictionary(props){
     </div>
     );
       } else {
-        load();
         return "Loading";
       }
 }
