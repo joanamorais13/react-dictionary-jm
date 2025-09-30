@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results"
@@ -24,7 +24,7 @@ export default function Dictionary(props){
         alert("NO RESULTS");
     }
 
-    function search(){
+    const search = useCallback(() => {
         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
         axios.get(apiUrl).then(handleResponse).catch(handleRejection);
 
@@ -35,7 +35,7 @@ export default function Dictionary(props){
 
         
 
-    }
+    }, [keyword]);
 
     function handleSubmit(event){
         event.preventDefault()
@@ -52,7 +52,7 @@ export default function Dictionary(props){
             setLoaded(true);
             search();
         }
-    }, [loaded]);
+    }, [loaded, search]);
 
     if (loaded){
     return (<div className="dictionary">
