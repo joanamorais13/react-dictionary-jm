@@ -21,16 +21,22 @@ a {
 }
 
 .App-header {
-  margin: 30px 0;
+  margin: 80px 0;
+  text-align: center;
 }
 
-.App-logo {
-  max-width: 400px;
-  display: block;
-  margin: 0 auto;
-  mix-blend-mode: multiply;
+.App-header h1{
 
+  color: var(--fourth-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 30px;
 }
+
+.App-header p {color: var(--fourth-color);
+  font-family: inherit;
+  font-size: 10px;}
+
 
 .App-footer {
   text-align: center;
@@ -40,14 +46,18 @@ a {
 
 @media (min-width: 0px) and (max-width: 480px) 
 { .App-header {
-    margin: 0;
+    margin: 40px 0 0 0;
+    padding-top: 20px;
   }
 
-    .App-logo {
-      max-width: 150px;
-  
-    }
-
+  .App-header h1{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+   
+.App-header p {
+    font-size: 8px;
+}
   .App-footer {
     
      font-size: 10px;
@@ -56,17 +66,20 @@ a {
 @media (min-width: 481px) and (max-width: 768px) 
 {
     .App-header {
-      margin: 0;
+      margin: 40px 0 0 0;
+      padding-top: 20px;
     }
 
-    .App-logo {
-      max-width: 200px;
-
+    .App-header h1 {
+      font-size: 25px;
+      margin-top: 10px;
     }
 
-        .App-footer {
-    
-          font-size: 12px;
-        }
+    .App-footer {
+      font-size: 12px;
+    }
   }
+
+
+
 
